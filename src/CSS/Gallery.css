@@ -1,0 +1,124 @@
+.overall-gallery {
+  background-color: #ebe5e5;
+  color: #000000;
+  /* width: 100vw; */
+  font: inherit;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 2rem;
+}
+h1 span {
+  color: #4caf50; /* Highlight color for "Riket Gallery" */
+}
+p {
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.dark .gallery img {
+  border: 2px solid #ffffff; /* Dark theme border color */
+}
+
+.gallery-search-form {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.gallery-search-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 16px;
+  color: #000000; /* Light theme input text color */
+  background-color: #ffffff; /* Light theme input background color */
+}
+
+.dark .gallery-search-input {
+  color: #ffffff; /* Dark theme input text color */
+  background-color: #333333; /* Dark theme input background color */
+  border-color: #ffffff; /* Dark theme input border color */
+}
+
+.gallery-search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-search-button:hover {
+  background-color: #45a049;
+}
+
+.gallery-search-button:focus {
+  outline: none;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+}
