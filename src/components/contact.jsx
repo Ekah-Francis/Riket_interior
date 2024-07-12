@@ -124,16 +124,18 @@ const ContactForm = () => {
           <div className="info">
             <div className="information">
               <img src="location.png" className="icon first" alt="" />
-              <p>8 Oyejide Street, Lagos, Nigeria</p>
+              <p>Lagos, Nigeria</p>
             </div>
             <div className="information">
               <img src="email.png" className="icon" alt="" />
-              <p>riket_interior@gmail.com</p>
+              <a href="mailto:riket_interior@gmail.com" className="text-black">
+                riket_interior@gmail.com
+              </a>
             </div>
             <div className="information">
               <img src="phone.png" className="icon" alt="" />
               <p>
-                <a href="tel:+123456789" className="tel">
+                <a href="tel:+2349014902497" className="tel text-black">
                   +2349014902497
                 </a>
               </p>
